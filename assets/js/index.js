@@ -1,7 +1,7 @@
 /* DEFININIENDO DOMS Y LISTA DE TAREAS QUE VENDRIA POR DEFECTO*/
 const tasks = [
   { id: 1, name: "Ir al supermercado", completed: false },
-  { id: 2, name: "Pasear al perro", completed: false },
+  { id: 2, name: "Pasear al Osito", completed: false },
   { id: 3, name: "Ir al gimnasio", completed: false },
 ];
 const taskList = document.querySelector("#task-list");

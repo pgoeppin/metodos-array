@@ -1,0 +1,41 @@
+body {
+    background-color: #fafafad2;
+    font-family: sans-serif;
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+#btn-add {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.counter {
+    text-align: start;
+    margin-right: 150px;
+}
+span {
+    font-weight: bold;
+}
+table {
+    margin: 10px 20px;
+}
+td, th {
+    padding-right: 25px;
+}
+.btn-delete {
+    text-decoration: none;
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
