@@ -30,10 +30,25 @@ btnAdd.addEventListener("click", () => {
         tasks.push(newTask)
         taskInput.value = ""
         renderTasks();
+        addDeleteFunction();
     } else {
         /* Si no hay datos, comienza con id: 1 */
         const newTask = {id: 1, name: taskInput.value, completed: false}
         tasks.push(newTask)
         taskInput.value = ""
-        renderTasks();}
+        renderTasks();
+        addDeleteFunction();}
 });
+function deleteTask (id){
+    const indexTsk = tasks.findIndex((element) => element.id == id)
+    tasks.splice(indexTsk,1)
+    renderTasks();
+    addDeleteFunction();
+}
+function addDeleteFunction() {
+    buttonsDel = document.querySelectorAll(".btn-delete")
+    buttonsDel.forEach(button => button.addEventListener("click", () => {
+        deleteTask(button.id);
+    })
+    )};
+addDeleteFunction();
